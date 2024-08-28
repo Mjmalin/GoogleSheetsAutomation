@@ -12,13 +12,21 @@ For each market, this entails:
 -manually updating the market location and central warehouse location in Google Sheets, waiting for the sheet to update  
 -selecting the section of the sheet to print  
 -copy/pasting the info needed for parts labels into another sheet  
--selecting the section of that sheet to print  
+-selecting the section of that sheet to print 
+
+This program automates these tasks.
 
 ## How the Program Works
 
-First, we have to connect to the Google Sheets API
+This program uses the library gspread to issue commands to the Google Sheets API.
 
-''' bash
+```bash
+import gspread
+```
+
+First, the program connects to the spreadsheet we need, using a key saved in a file "credentials.json" to authenticate. 
+
+```bash
 # Authenticate and connect to Google Sheets
 scopes = ["https://www.googleapis.com/auth/spreadsheets"]
 creds = Credentials.from_service_account_file("credentials.json", scopes=scopes)
@@ -30,6 +38,13 @@ sheet = client.open_by_key(sheets_id)
 order_creator_sheet = sheet.worksheet('Order Creator - Supply Plan')
 supply_plan_sheet = sheet.worksheet('Supply Plan')
 label_creator_sheet = sheet.worksheet('Label Creator - Pick / Pack')
+```
+
+
+
+
+
+
 
 
 

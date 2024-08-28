@@ -10,7 +10,7 @@ Each month, the Veo Central Warehouse Lead Manager has to print the parts list (
 
 For each market, this entails:  
 -manually updating the market location and central warehouse location in Google Sheets, waiting for the sheet to update  
--electing the section of the sheet to print  
+-selecting the section of the sheet to print  
 -copy/pasting the info needed for parts labels into another sheet  
 -selecting the section of that sheet to print  
 

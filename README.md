@@ -32,9 +32,12 @@ scopes = ["https://www.googleapis.com/auth/spreadsheets"]
 creds = Credentials.from_service_account_file("credentials.json", scopes=scopes)
 client = gspread.authorize(creds)
 
-# Open the specific Google Sheet and worksheet
+# Open the Google Sheet and name the worksheets we need
 sheets_id = "1jWE3hhSSMi6wGoxvkd61owjmuZTpbzRXXupKNY4G39Y"
 sheet = client.open_by_key(sheets_id)
+order_creator_sheet = sheet.worksheet('Order Creator - Supply Plan')
+supply_plan_sheet = sheet.worksheet('Supply Plan')
+label_creator_sheet = sheet.worksheet('Label Creator - Pick / Pack')
 ```
 
 

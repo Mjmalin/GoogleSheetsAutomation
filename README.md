@@ -135,7 +135,7 @@ The function wraps up by feeding info into another function, which is used to do
         label_creator_sheet.batch_clear(['J:J'])
 ```
 
-The download_pdfs function can be seen here. 
+That download_pdfs function downloads the specified ranges of parts or parts labels, and creates an authorized session from Google Sheets API to then download. 
 
 ```bash
 def download_pdfs(sheet_name, cell_range, counts, sheet_id, location, markets):
@@ -155,6 +155,18 @@ def download_pdfs(sheet_name, cell_range, counts, sheet_id, location, markets):
             f.write(response.content) 
         pdfs.append(f"{location}_{markets}.pdf")
         print(f"PDF created: {location}_{markets}.pdf")
+```
+
+Finally, the PDFs are merged to be easily printed. The individual files are not deleted in case it's useful to reference those.
+
+```bash
+# Merge PDFs to one file to be physically printed
+result = fitz.open()
+for pdf in pdfs:
+    with fitz.open(pdf) as mfile:
+        result.insert_pdf(mfile)    
+result.save("Markets.pdf")
+print("PDF created: Markets.pdf")
 ```
 
 

@@ -85,7 +85,7 @@ The function defines the number of rows to be printed as 'counts.'
         for lines in values_list:
             counts = counts + 1
 ```
-The function reads the column of parts labels and transfers them to a specially formatted sheet, as the labels need to be printed onto a certain size of physical sticky labels. To avoid Google Sheets API's 60 read/write requests per user per minute quota, the program is instructed to sleep when necessary.
+The function reads the column of parts labels and transfers them to a specially formatted sheet, as the labels need to be printed onto a certain size of physical sticky labels. To avoid Google Sheets API's 60 read/write requests per user per minute quota limit, the program is instructed to sleep when necessary.
 
 ```bash
         # Read labels (do not pull special request labels)

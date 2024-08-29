@@ -108,9 +108,9 @@ The function reads the column of parts labels and transfers them to a specially 
         labels_count = 0
         for flat_labels in flat_list:    
             labels_count = labels_count + 1
-        if len(flat_list > 40):
+            if len(flat_list > 40):
                 time.sleep(1)
-        label_creator_sheet.update_cell(labels_count, 10, flat_labels)
+            label_creator_sheet.update_cell(labels_count, 10, flat_labels)
 ```
 Similar to the parts lists, the correct amount of rows to be printed also needs to be defined for the labels.
 

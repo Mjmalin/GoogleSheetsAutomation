@@ -135,7 +135,7 @@ The function wraps up by feeding info into another function, which is used to do
         label_creator_sheet.batch_clear(['J:J'])
 ```
 
-That download_pdfs function downloads the specified ranges of parts or parts labels, and creates an authorized session from Google Sheets API to then download. 
+That download_pdfs function creates an authorized session for Google Sheets API to then download the specified ranges of parts or parts labels.
 
 ```bash
 def download_pdfs(sheet_name, cell_range, counts, sheet_id, location, markets):
@@ -168,15 +168,3 @@ for pdf in pdfs:
 result.save("Markets.pdf")
 print("PDF created: Markets.pdf")
 ```
-
-
-
-
-
-
-
-
-
-
-
-

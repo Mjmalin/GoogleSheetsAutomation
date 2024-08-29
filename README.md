@@ -1,6 +1,6 @@
 # VeoSheetsAutomation
 
-This program was made for the micromobility company Veo. It automates a time-consuming task in Google Sheets for their supply chain.
+This program was made for the micromobility company Veo. It automates a time-consuming task in Google Sheets for their pick and packing and fulfillment process within their supply chain.
 
 image
 

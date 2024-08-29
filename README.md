@@ -157,7 +157,7 @@ def download_pdfs(sheet_name, cell_range, counts, sheet_id, location, markets):
         print(f"PDF created: {location}_{markets}.pdf")
 ```
 
-Finally, the PDFs are merged to be easily printed. The individual files are not deleted in case it's useful to reference those.
+Finally, the PDFs are merged to be easily printed. The individual files are not deleted in case it's useful to print one-by-one.
 
 ```bash
 # Merge PDFs to one file to be physically printed

@@ -73,10 +73,10 @@ def prepare_market_pdfs(markets_list, location):
         order_creator_sheet.update_cell(2, 14, location)
         order_creator_sheet.update_cell(1, 14, markets)
 ```
-The function defines the number of rows to be printed as 'counts.'
+The function defines the number of rows to be printed.
 
 ```bash
-        # Define proper rows range for each market, only as far as Special Requests that actually have contents
+        # Define proper rows range for each market
         values_list = order_creator_sheet.get('C:C')
         counts = 0
         for lines in values_list:

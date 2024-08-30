@@ -44,11 +44,8 @@ label_creator_sheet = sheet.worksheet('Label Creator - Pick / Pack')
 The program finds the location of all cells that say "ok", as those are the markets that have shipments this month. 
 
 ```bash
-# Find all cells in rows 3 and 4 of Supply Plan sheet that say "ok" or "OK"
+# Find all cells in rows 3 and 4 of Supply Plan sheet that say "ok"
 cell_list = supply_plan_sheet.findall("ok")
-cap_cell_list = supply_plan_sheet.findall("OK")
-for caps in cap_cell_list:
-    cell_list.append(caps)
 ```
 
 The markets are added to one of two lists via the create_markets_lists function, depending on which central warehouse it will receive the shipment from. 

@@ -4,6 +4,18 @@ This program was made for the micromobility company Veo. It automates a time-con
 
 image
 
+## Disclaimer
+
+Specifics concerning parts and spreadsheets have been changed to maintain Veo's privacy.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the required packages.
+
+```bash
+pip install -r requirements.txt
+```
+
 ## The Problem
 
 Each month, the Veo Lead Central Warehouse Manager has to print the parts list (and parts labels) every market location needs. There could be up to 70 parts lists and labels to print.

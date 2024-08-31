@@ -2,8 +2,6 @@
 
 This program was made for the micromobility company Veo. It automates a time-consuming task in Google Sheets for their pick and pack fulfillment process within their supply chain.
 
-image
-
 ## Disclaimer
 
 Specifics concerning parts and spreadsheets have been changed to maintain Veo's privacy.

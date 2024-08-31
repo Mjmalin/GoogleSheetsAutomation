@@ -41,7 +41,7 @@ def download_pdfs(sheet_name, cell_range, counts, sheet_id, location, markets):
         range_to_export = f"{sheet_name}!{cell_range}{counts}"
         export_url = f"https://docs.google.com/spreadsheets/d/{sheets_id}/export?format=pdf&gid={sheet_id}&range={range_to_export}"
 
-        # Use authorized session to make the request (is this necessary?)
+        # Use authorized session to make the request
         session = requests.Session()
         session.headers.update({'Authorization': f'Bearer {creds.token}'})
 

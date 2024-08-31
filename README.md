@@ -10,10 +10,8 @@ Specifics concerning parts and spreadsheets have been changed to maintain Veo's 
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the required packages.
-
 ```bash
-pip install -r requirements.txt
+pip install gspread google-auth requests pymupdf
 ```
 
 ## The Problem

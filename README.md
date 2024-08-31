@@ -6,7 +6,7 @@ This program was made for the micromobility company Veo. It automates a time-con
 
 Specifics concerning parts and spreadsheets have been changed to maintain Veo's privacy.
 
-## Installation
+## Required Packages
 
 ```bash
 pip install gspread google-auth requests pymupdf
